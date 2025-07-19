@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form
+    action="https://formspree.io/f/mrblegny"
+    class="fs-form"
+    method="POST"
+  >
+    <div class="fs-field">
+      <label class="fs-label" for="name">Your Name</label>
+      <input class="fs-input" type="text" id="name" name="name" required />
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="email">Email</label>
+      <input class="fs-input" type="email" id="email" name="email" required />
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="message">Message</label>
+      <textarea
+        class="fs-textarea"
+        id="message"
+        name="message"
+        placeholder="What would you like to discuss?"
+        required
+      ></textarea>
+    </div>
+    <div class="fs-button-group">
+      <button class="fs-button" type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
